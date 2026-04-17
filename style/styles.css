@@ -1,28 +1,69 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
 /* Reset and Base Styles */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Ubuntu', sans-serif;
 }
 
 html {
     font-size: 16px;
+    height: 100%;
 }
 
 body {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    height: 100%;
+    font-family: 'Ubuntu', sans-serif;
     line-height: 1.6;
-    color: #333;
+    color: #222;
     background-color: #f9f9f9;
 }
 
+.ubuntu-regular {
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.ubuntu-italic {
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: 400;
+    font-style: italic;
+}
+
+.ubuntu-bold {
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: 700;
+    font-style: normal;
+}
+
+.ubuntu-bold-italic {
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: 700;
+    font-style: italic;
+}
+
 /* Header Styles */
-header {
+header, footer{
     background-color: #2c3e50;
     color: white;
     padding: 2rem 1rem;
     text-align: center;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+
+footer {
+    text-align: center;
+    padding: 1rem 0;
+    margin-top: 2rem;
+    font-size: 0.95rem;
+    color: white;
 }
 
 h1 {
@@ -35,6 +76,7 @@ main {
     max-width: 900px;
     margin: 2rem auto;
     padding: 0 1rem;
+    flex: 1;
 }
 
 /* Article Styles */
@@ -48,7 +90,7 @@ article {
 p {
     font-size: 1rem;
     line-height: 1.8;
-    color: #555;
+    margin-bottom: 0.5rem;
 }
 
 /* Button Styles */
@@ -113,7 +155,7 @@ h5 {
     font-weight: 600;
     margin-top: 0.75rem;
     margin-bottom: 0.5rem;
-    color: #555;
+    color: #222;
 }
 
 h6 {
@@ -121,7 +163,7 @@ h6 {
     font-weight: 600;
     margin-top: 0.75rem;
     margin-bottom: 0.5rem;
-    color: #777;
+    color: #222;
 }
 
 /* Link Styles */
@@ -150,7 +192,7 @@ ul, ol {
 
 li {
     margin-bottom: 0.5rem;
-    color: #555;
+    color: #222;
 }
 
 /* Code Styles */
@@ -257,6 +299,25 @@ td {
 
 tr:hover {
     background-color: #f5f5f5;
+}
+
+/* How-to-use toggle section */
+.how-to-use {
+    margin-bottom: 1.5rem;
+}
+
+.how-to-content {
+    margin-top: 1rem;
+    padding: 1rem;
+    border-radius: 5px;
+    background-color: #f5f6f8;
+    border: 1px solid #ecf0f1;
+    color: #333;
+    line-height: 1.6;
+}
+
+.how-to-toggle .arrow {
+    margin-left: 0.75rem;
 }
 
 /* Horizontal Rule */
