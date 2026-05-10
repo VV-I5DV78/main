@@ -10,6 +10,6 @@ const entered = prompt("Add meg a csapat titkos jelszavát!");
 if (!validPasswords.includes(entered)) {
 
     // nincs hozzáférés
-    window.location.href = "/blocked.html";
+    window.location.href = "./blocked.html";
 
 }
