@@ -1,20 +1,20 @@
-const key = new URLSearchParams(window.location.search).get('key');
+/*const key = new URLSearchParams(window.location.search).get('key');
 
 const path = window.location.pathname.split('/').pop();
 
 // oldal → kulcs párosítás
 const pageKeys = {
     
-    'page1.html': '5mK2pRxL8',
-    'page2.html': '9bJ7tDnQ3',
-    'page3.html': '4cW1hGfV6',
-    'page4.html': '2sN8qLvP5'
+    //'page1.html': '5mK2pRxL8',
+    //'page2.html': '9bJ7tDnQ3',
+    //'page3.html': '4cW1hGfV6',
+    //  'page4.html': '2sN8qLvP5'
     
 
-    /*'page1.html': 'a',
+    'page1.html': 'a',
     'page2.html': 'a',
     'page3.html': 'a',
-    'page4.html': 'a'*/
+    'page4.html': 'a'
 };
 
 // elvárt kulcs
@@ -33,6 +33,8 @@ const showBlocked = function () {
     document.body.style.backgroundColor = '#eee';
 };
 
+*/
+
 const attachHowToUseToggle = function () {
     const toggleButtons = document.querySelectorAll('.how-to-toggle');
     toggleButtons.forEach(button => {
@@ -50,6 +52,7 @@ const attachHowToUseToggle = function () {
     });
 };
 
+/*
 const initPage = function () {
     if (!validKey || key !== validKey) {
         showBlocked();
@@ -58,9 +61,16 @@ const initPage = function () {
 
     attachHowToUseToggle();
 };
+*/
+
 
 if (document.body) {
-    initPage();
+    //initPage();
+    attachHowToUseToggle();
 } else {
-    document.addEventListener('DOMContentLoaded', initPage);
+    //document.addEventListener('DOMContentLoaded', initPages);
+
+    document.addEventListener('DOMContentLoaded', function () {
+        attachHowToUseToggle();
+    });
 }

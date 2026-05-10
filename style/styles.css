@@ -73,7 +73,7 @@ h1 {
 
 /* Main Content */
 main {
-    max-width: 900px;
+    width: min(900px, 100%);
     margin: 2rem auto;
     padding: 0 1rem;
     flex: 1;
@@ -99,7 +99,7 @@ button {
     color: white;
     border: none;
     padding: 0.75rem 1.5rem;
-    margin: 1rem 0;
+    margin: 0;
     font-size: 1rem;
     font-weight: 600;
     border-radius: 5px;
@@ -243,6 +243,15 @@ img {
     margin: 1rem 0;
 }
 
+figure {
+    background-color: #f5f6f8;
+    border-radius: 5px;
+}
+
+figcaption {
+    padding: 0 8px 8px 8px;
+}
+
 /* Form Styles */
 input, textarea, select {
     width: 100%;
@@ -319,6 +328,7 @@ tr:hover {
 .how-to-toggle .arrow {
     margin-left: 0.75rem;
 }
+
 
 /* Horizontal Rule */
 hr {
